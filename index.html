@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panelando | Seu Guia Definitivo na Cozinha</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <h1>Panelando</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#receitas">Receitas</a></li>
+                <li><a href="#compartilhar">Enviar Receita</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-text">
+                <h2>Inspiração saborosa para todas as horas do dia!</h2>
+                <p>
+                    Seja para um almoço prático, um jantar especial ou aquela sobremesa incrível, 
+                    o <strong>Panelando</strong> é o seu guia descomplicado na cozinha.
+                </p>
+                <a href="#receitas" class="btn-primary">Ver Receitas</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://blog.mundovem.com.br/wp-content/uploads/2019/12/iStock-1081090762-scaled.jpg" alt="Mesa de comida deliciosa">
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="receitas" class="recipes-section">
+            <h2>Receitas em Destaque</h2>
+            <p>Escolha o prato do dia e mãos à obra!</p>
+
+            <div class="recipes-grid">
+                
+                <article class="recipe-card">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500" alt="Bowl de Salada">
+                    <div class="recipe-content">
+                        <span class="badge">Almoço Prático</span>
+                        <h3>Bowl Saudável de Frango</h3>
+                        <p>Uma refeição completa, rápida de preparar e super saudável.</p>
+                        <div class="recipe-info">
+                            <span>⏱️ 20 min</span>
+                            <span>👨‍🍳 Fácil</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="recipe-card">
+                    <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=500" alt="Bolo de Chocolate">
+                    <div class="recipe-content">
+                        <span class="badge">Sobremesa</span>
+                        <h3>Bolo Cremoso de Chocolate</h3>
+                        <p>Perfeito para o café da tarde ou para impressionar a família.</p>
+                        <div class="recipe-info">
+                            <span>⏱️ 45 min</span>
+                            <span>👨‍🍳 Médio</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="compartilhar" class="share-section">
+            <h2>Envie a sua Receita! 🍳</h2>
+            <p>Quer ver seu prato no Panelando? Preencha os campos abaixo e envie para a gente!</p>
+
+            <form class="recipe-form">
+                <div class="form-group">
+                    <label for="nome">Seu Nome:</label>
+                    <input type="text" id="nome" placeholder="Ex: Isabelly" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="titulo">Nome da Receita:</label>
+                    <input type="text" id="titulo" placeholder="Ex: Torta de Limão Fácil" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="categoria">Categoria:</label>
+                    <select id="categoria">
+                        <option value="almoco">Almoço Prático</option>
+                        <option value="jantar">Jantar Especial</option>
+                        <option value="sobremesa">Sobremesa</option>
+                        <option value="inovador">Novos Sabores</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="ingredientes">Ingredientes:</label>
+                    <textarea id="ingredientes" rows="4" placeholder="Liste os ingredientes necessários..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="preparo">Modo de Preparo:</label>
+                    <textarea id="preparo" rows="4" placeholder="Passo a passo como fazer..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary">Enviar Receita</button>
+            </form>
+        </section>
+
+        <section id="sobre" class="about">
+            <h2>Sobre o Projeto</h2>
+            <p>
+                Criado por <strong>Isabelly de Pontes</strong>, o Panelando nasceu do desejo de transformar a cozinha 
+                em um espaço de criatividade e leveza.
+            </p>
+        </section>
+    </main>
+
+<button id="botao-tema">Modo escuro</button>
+  
+    <footer>
+        <p>&copy; 2026 Panelando por Isabelly de Pontes. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
